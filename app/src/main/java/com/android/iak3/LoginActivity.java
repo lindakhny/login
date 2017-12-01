@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
                 String password = etPass.getText().toString();
 
                 if(username.equals("android")&&(password.equals("kejar"))){
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, PlayerActivity.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(LoginActivity.this, "Username atau Password salah", Toast.LENGTH_SHORT).show();

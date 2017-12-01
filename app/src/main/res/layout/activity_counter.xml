@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.iak3.CounterActivity">
+    <Button
+        android:id="@+id/plus1A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 point"
+        android:onClick="addOneForTeamA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/plus2A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 point"
+        android:onClick="addTwoForTeamA"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true" />
+    <Button
+        android:id="@+id/plus3A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 point"
+        android:onClick="addThreeForTeamA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tim A"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/plus2A"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_pemain1"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_pemain1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_skor1"/>
+    
+    <Button
+        android:id="@+id/plus1B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Point"
+        android:onClick="addOneForTeamB"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:id="@+id/plus2B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 Point"
+        android:onClick="addTwoForTeamB"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+    <Button
+        android:id="@+id/plus3B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Point"
+        android:onClick="addThreeForTeamB"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tim B"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/plus2B"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_pemain2"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/tv_pemain2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_skor2"/>
+</RelativeLayout>

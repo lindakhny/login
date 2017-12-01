@@ -5,16 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.android.iak3.MainActivity">
-
+    tools:context="com.android.iak3.PlayerActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_pemain1"
-        android:textSize="20sp"/>
-    <TextView
+        android:text="Nama Pemain"
+        android:textSize="24sp"
+        android:textColor="#000"/>
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_pemain2"
-        android:textSize="20sp"/>
+        android:id="@+id/et_first_player"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_second_player"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMPAN"
+        android:id="@+id/btn_simpan"/>
 </LinearLayout>
